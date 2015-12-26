@@ -4,3 +4,5 @@ composer.lock
 .buildpath
 .project
 .settings/*
+.Vagrantfile
+.vagrant/*
