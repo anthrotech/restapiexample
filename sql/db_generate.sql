@@ -14,7 +14,7 @@ updated_at TIMESTAMP NULL DEFAULT '0000-00-00 00:00:00',
 PRIMARY KEY (id)) 
 ENGINE=InnoDB;
 
-CREATE TABLE IF NOT EXISTS wiw.shifts
+CREATE TABLE IF NOT EXISTS wiw.shift
 (id INT NOT NULL AUTO_INCREMENT,
 manager_id INT,
 employee_id INT,
@@ -42,3 +42,6 @@ INSERT INTO users (name,role,email,password,phone,created_at,updated_at) VALUES 
 INSERT INTO users (name,role,email,password,phone,created_at,updated_at) VALUES ('John Doe','employee','johndoe@wiw.com',MD5('test123'),'612-455-5566',NOW(),NOW());
 INSERT INTO users (name,role,email,password,phone,created_at,updated_at) VALUES ('Stan Rest','employee','stanrest@wiw.com',MD5('test123'),'612-455-5566',NOW(),NOW());
 INSERT INTO users (name,role,email,password,phone,created_at,updated_at) VALUES ('Shirley Mo','employee','shirleymo@wiw.com',MD5('test123'),'612-455-5566',NOW(),NOW());
+
+
+INSERT INTO shifts (manager_id,employee_id,start_time,end_time,created_at,updated_at) VALUES (1,3,'');
