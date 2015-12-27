@@ -19,7 +19,8 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$data['title'] = "When I Work REST API Code Test";
+		$this->load->view('welcome_message',$data);
 	}
 }
 
