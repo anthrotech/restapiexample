@@ -30,3 +30,5 @@ ENGINE=InnoDB;
 
 INSERT INTO users (name,role,email,password,phone,created_at,updated_at) VALUES ('Jane Smith','manager','janesmith@wiw.com',MD5('test123'),'612-455-5566',NOW(),NOW());
 INSERT INTO users (name,role,email,password,phone,created_at,updated_at) VALUES ('John Doe','employee','johndoe@wiw.com',MD5('test123'),'612-455-5566',NOW(),NOW());
+INSERT INTO users (name,role,email,password,phone,created_at,updated_at) VALUES ('Stan Rest','employee','stanrest@wiw.com',MD5('test123'),'612-455-5566',NOW(),NOW());
+INSERT INTO users (name,role,email,password,phone,created_at,updated_at) VALUES ('Shirley Mo','employee','shirleymo@wiw.com',MD5('test123'),'612-455-5566',NOW(),NOW());
