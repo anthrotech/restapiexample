@@ -15,6 +15,6 @@ installpkg apache2-suexec-custom
 
 echo "ServerName localhost" > /etc/apache2/conf-enabled/servername.conf
 a2enmod suexec
-a2dissite 000-default.conf
-cp /tmp/001-talented.conf /etc/apache2/sites-available
+a2dissite test-httpd.conf
+cp /tmp/test-httpd.conf /etc/apache2/sites-available
 service apache2 restart
