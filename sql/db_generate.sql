@@ -28,9 +28,9 @@ CONSTRAINT fk_ManagerID  FOREIGN KEY (manager_id) REFERENCES users(id),
 CONSTRAINT fk_EmployeeID FOREIGN KEY (employee_id) REFERENCES users(id)) 
 ENGINE=InnoDB;
 
-CREATE TABLE IF NOT EXIST keys (
+CREATE TABLE IF NOT EXISTS wiw.api_keys (
 id INT(11) NOT NULL AUTO_INCREMENT,
-key VARCHAR(40) NOT NULL,
+`key` VARCHAR(40) NOT NULL,
 level INT(2) NOT NULL,
 ignore_limits TINYINT(1) NOT NULL DEFAULT '0',
 date_created INT(11) NOT NULL,
