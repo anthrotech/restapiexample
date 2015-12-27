@@ -6,3 +6,4 @@ composer.lock
 .settings/*
 .Vagrantfile
 .vagrant/*
+log/*
