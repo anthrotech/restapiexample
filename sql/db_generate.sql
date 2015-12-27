@@ -43,5 +43,4 @@ INSERT INTO users (name,role,email,password,phone,created_at,updated_at) VALUES 
 INSERT INTO users (name,role,email,password,phone,created_at,updated_at) VALUES ('Stan Rest','employee','stanrest@wiw.com',MD5('test123'),'612-455-5566',NOW(),NOW());
 INSERT INTO users (name,role,email,password,phone,created_at,updated_at) VALUES ('Shirley Mo','employee','shirleymo@wiw.com',MD5('test123'),'612-455-5566',NOW(),NOW());
 
-
-INSERT INTO shifts (manager_id,employee_id,start_time,end_time,created_at,updated_at) VALUES (1,3,'');
+INSERT INTO shift (manager_id,employee_id,start_time,end_time,created_at,updated_at) VALUES (1,3,'2015-12-27 05:00:00','2015-12-27 12:00:00',NOW(),NOW());
