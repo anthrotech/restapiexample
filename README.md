@@ -1,5 +1,5 @@
-# Code Test for When I Work Full Stack Developer (PHP or Frontend focused) Position
+# Codeigniter REST API Code Example
 
-Test for Full Stack Developer (PHP or Frontend focused) Position
+Includes Login based on different user roles.
 
-Basic test for showing my stuff.
+Basic example of HTTP REST Methods including GET, PUT, POST, DELETE using Codeigniter REST Server
