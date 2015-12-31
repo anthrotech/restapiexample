@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Dashboard extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -25,13 +25,13 @@ class Welcome extends CI_Controller {
 	
 	public function index()
 	{
-		if ($this->session->has_userdata('user_id')) {
-			redirect('/dashboard','location');
+		if (!$this->session->has_userdata('user_id')) {
+			redirect('/','location');
 		}
 		else {
-			$data['title'] = "Codeigniter REST API Code Sample";
-			$data['message'] = "Please enter your email address and password.";
-			$this->load->view('welcome_message',$data);
+			$data['title'] = "Codeigniter REST API Code Sample - <a href='/user/logout'>Logout</a>";
+			$data['message'] = "You can access various features via the following links.";
+			$this->load->view('dashboard',$data);			
 		}
 	}
 }
