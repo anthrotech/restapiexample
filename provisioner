@@ -15,6 +15,7 @@ installpkg apache2-suexec-custom
 
 echo "ServerName localhost" > /etc/apache2/conf-enabled/servername.conf
 a2enmod suexec
+a2enmod rewrite
 a2dissite test-httpd.conf
 cp /tmp/test-httpd.conf /etc/apache2/sites-available
 cp /tmp/test-httpd.conf /etc/apache2/sites-enabled
