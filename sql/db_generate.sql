@@ -64,3 +64,6 @@ INSERT INTO shift (manager_id,employee_id,start_time,end_time,created_at,updated
 INSERT INTO shift (manager_id,employee_id,start_time,end_time,created_at,updated_at) VALUES (1,3,'2016-01-15 05:00:00','2016-01-15 12:00:00',NOW(),NOW());
 INSERT INTO shift (manager_id,employee_id,start_time,end_time,created_at,updated_at) VALUES (1,3,'2016-01-16 05:00:00','2016-01-16 12:00:00',NOW(),NOW());
 INSERT INTO shift (manager_id,employee_id,start_time,end_time,created_at,updated_at) VALUES (1,3,'2016-01-17 05:00:00','2016-01-17 12:00:00',NOW(),NOW());
+INSERT INTO shift (manager_id,employee_id,start_time,end_time,created_at,updated_at) VALUES (1,1,'2016-01-15 05:00:00','2016-01-15 12:00:00',NOW(),NOW());
+INSERT INTO shift (manager_id,employee_id,start_time,end_time,created_at,updated_at) VALUES (1,1,'2016-01-16 05:00:00','2016-01-16 12:00:00',NOW(),NOW());
+INSERT INTO shift (manager_id,employee_id,start_time,end_time,created_at,updated_at) VALUES (1,1,'2016-01-17 05:00:00','2016-01-17 12:00:00',NOW(),NOW());
