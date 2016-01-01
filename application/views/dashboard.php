@@ -17,10 +17,10 @@ if ($message) {
 <?php if ($this->session->userdata('role') == 'manager'):?>
 <p>	
 	<ul>
-		<li><a href="/shift/shifts/format/csv">ALL Shifts - (CSV)</a></li>
-		<li><a href="/shift/shifts">ALL Shifts - (JSON)</a></li>
-		<li><a href="/shift/shifts/format/html">ALL Shifts - (HTML)</a></li>
-		<li><a href="/shift/shifts/format/xml">ALL Shifts - (XML)</a></li>
+		<li><a href="/shift/shifts/format/csv" target="newwin">ALL Shifts - (CSV)</a></li>
+		<li><a href="/shift/shifts" target="newwin">ALL Shifts - (JSON)</a></li>
+		<li><a href="/shift/shifts/format/html" target="newwin">ALL Shifts - (HTML)</a></li>
+		<li><a href="/shift/shifts/format/xml" target="newwin">ALL Shifts - (XML)</a></li>
 	</ul>
 	<ul>
 		<li>MY Employee Shifts - (CSV)</li>
@@ -31,10 +31,10 @@ if ($message) {
 </p>
 <p><b>Users</b></p>
 	<ul>
-		<li><a href="/employee/employees/format/csv">ALL Users - (CSV)</a></li>
-		<li><a href="/employee/employees">ALL Users - (JSON)</a></li>
-		<li><a href="/employee/employees/format/html">ALL Users - (HTML)</a></li>
-		<li><a href="/employee/employees/format/xml">ALL Users - (XML)</a></li>
+		<li><a href="/employee/employees/format/csv" target="newwin">ALL Users - (CSV)</a></li>
+		<li><a href="/employee/employees" target="newwin">ALL Users - (JSON)</a></li>
+		<li><a href="/employee/employees/format/html" target="newwin">ALL Users - (HTML)</a></li>
+		<li><a href="/employee/employees/format/xml" target="newwin">ALL Users - (XML)</a></li>
 	</ul>
 <?php endif;?>	
 <?php
