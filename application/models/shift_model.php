@@ -13,6 +13,14 @@ class Shift_model extends CI_Model {
 				FROM shift as s 
 				LEFT JOIN users as uman ON s.manager_id = uman.id 
 				LEFT JOIN users as uemp ON s.employee_id = uemp.id";
+		if ($this->input->get('role') == 'employee') {
+				// Grab the Shift by Employee ID passsed in the URL Query String
+				$sql .= " WHERE s.employee_id = ".$this->session->userdata('user_id');
+		}
+		else if ($this->input->get('role') == 'manager') {
+				// Grab the Shift by Manager ID passed in the URL Query String
+				$sql .= " WHERE s.manager_id = ".$this->session->userdata('user_id');				
+		}
 		$this->db->trans_start();
 		$query = $this->db->query($sql);
 		$this->db->trans_complete();

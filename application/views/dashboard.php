@@ -8,10 +8,10 @@ if ($message) {
 <p><b>Shifts</b></p>
 <p>
 	<ul>
-		<li>MY Shifts - (CSV)</li>
-		<li>MY Shifts - (JSON)</li>
-		<li>MY Shifts - (HTML)</li>
-		<li>MY Shifts - (XML)</li>
+		<li><a href="/shift/shifts/format/csv?role=employee" target="newwin">MY Shifts - (CSV)</a></li>
+		<li><a href="/shift/shifts?role=employee" target="newwin">MY Shifts - (JSON)</li>
+		<li><a href="/shift/shifts/format/html?role=employee" target="newwin">MY Shifts - (HTML)</a></li>
+		<li><a href="/shift/shifts/format/xml?role=employee" target="newwin">MY Shifts - (XML)</a></li>
 	</ul>	
 </p>
 <?php if ($this->session->userdata('role') == 'manager'):?>
@@ -23,11 +23,11 @@ if ($message) {
 		<li><a href="/shift/shifts/format/xml" target="newwin">ALL Shifts - (XML)</a></li>
 	</ul>
 	<ul>
-		<li>MY Employee Shifts - (CSV)</li>
-		<li>MY Employee Shifts - (JSON)</li>
-		<li>MY Employee Shifts - (HTML)</li>
-		<li>MY Employee Shifts - (XML)</li>
-	</ul>		
+		<li><a href="/shift/shifts/format/csv?role=manager" target="newwin">MY Employee Shifts - (CSV)</a></li>
+		<li><a href="/shift/shifts?role=manager" target="newwin">MY Employee Shifts - (JSON)</li>
+		<li><a href="/shift/shifts/format/html?role=manager" target="newwin">MY Employee Shifts - (HTML)</a></li>
+		<li><a href="/shift/shifts/format/xml?role=manager" target="newwin">MY Employee Shifts - (XML)</a></li>
+	</ul>				
 </p>
 <p><b>Users</b></p>
 	<ul>
